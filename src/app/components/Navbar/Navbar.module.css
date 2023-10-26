@@ -1,0 +1,146 @@
+.header {
+  margin: 30px 4% 0 4%;
+}
+
+.menu_list {
+  border-bottom: 2px solid #f2f1ef;
+    border-top: 2px solid #f2f1ef;
+    padding: 20px 0
+    
+}
+
+.menu_items {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  
+}
+
+.menu_items a {
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #f2f1ef;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px !important;
+}
+
+.menu_items a:hover {
+  color: #dd4646;
+  text-decoration: underline dotted;
+}
+
+.logo h3 {
+  font-size: 65px;
+  text-align: center;
+}
+
+.logo h3:hover {
+  color: white;
+}
+
+.main_menu input[type="checkbox"] {
+  display: none;
+}
+
+@media only all and (max-width: 1000px) {
+  .main_menu {
+    display: flex;
+  }
+
+  .main_menu input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 60px;
+    width: 60px;
+    top: 0px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+  }
+
+  .main_menu .hamburger_lines {
+    display: block;
+    height: 23px;
+    width: 35px;
+    position: absolute;
+    top: 17px;
+    left: 32px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .main_menu .hamburger_lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+  }
+
+  .main_menu .hamburger_lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .main_menu .hamburger_lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .main_menu .hamburger_lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .responsive_menu .menu_list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu_items {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    background-color: black;
+    width: 100%;
+  }
+
+  .menu_items li {
+    list-style: none;
+    /* background: black; */
+    margin: 20px 0;
+    width: max-content;
+  }
+
+
+
+  .main_menu .siteTitle {
+    margin: auto;
+    text-align: center;
+  }
+
+  .menu_list {
+    position: absolute;
+    z-index: 9999;
+    top: 3rem;
+    left: -100vh;
+  }
+
+  .main_menu input[type="checkbox"]:checked ~ .menu_list {
+    left: 0;
+  }
+
+  .main_menu input[type="checkbox"]:checked ~ .hamburger_lines .line1 {
+    transform: rotate(35deg);
+  }
+
+  .main_menu input[type="checkbox"]:checked ~ .hamburger_lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .main_menu input[type="checkbox"]:checked ~ .hamburger_lines .line3 {
+    transform: rotate(-35deg);
+  }
+}

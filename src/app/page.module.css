@@ -1,0 +1,17 @@
+
+
+.content {
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -0.31em;
+    margin: 30px 4% 0 4%;
+    margin-bottom: 1.2rem !important;
+}
+
+.collumns {
+    columns: 4;
+    gap: 1rem;
+    counter-reset: grid;
+    display: flex;
+    flex-wrap: wrap;
+}
