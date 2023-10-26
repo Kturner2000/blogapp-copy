@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-size: 14px;
+  color: #f2f1ef;
+  background-color: black;
+  overflow-x: hidden ;
+  font-weight: 100;
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  
+}
+
+a:hover {
+  color: red;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before{
+  font-size: 16px;
+  color: white;
+}
+
+.ql-toolbar span {
+  color: white;
+}
+.ql-picker-label.ql-active {
+  color: red !important ;
+}
+.ql-picker-label.ql-active, .ql-stroke {
+  color: red !important ;
+}
+.ql-picker-options {
+  background-color: #000 !important;
+}
+
